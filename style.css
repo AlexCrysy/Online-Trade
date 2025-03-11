@@ -20,13 +20,14 @@ body {
 header { /*CENTRA TODO LO QUE VA EN EL HEADER, Y CON PADING LO CENTRA A LA MITAD VISUALMENTE*/
     background-color: #f8f8f8;
     text-align: center; /*CENTRA TODO A LA MITAD*/
-    padding: 70px; /*LO ENCOJE DESDE LOS LADOS- HACIA ADENTRO*/
+    padding: 10px; /*LO ENCOJE DESDE LOS LADOS- HACIA ADENTRO - CAMBIA EL ESPACIO DE ARRIBA*/
 }
 
 header h1 img {
     max-width: 100%;
     height: auto;
 }
+
 
 /* Imagenes y Estilos Generales */
 img {
@@ -83,8 +84,7 @@ img {
 /* ******Estilos de pie de página ****************/
 .pie-img {
     text-align: center;
-    background: linear-gradient(to right, rgba(23, 131, 219, 0.8), rgba(0, 0, 0, 0.4)),
-    url('/tienda/images/piep.jpg') no-repeat center center;
+    background: linear-gradient(to right, rgba(23, 131, 219, 0.8), rgba(0, 0, 0, 0.4)),url('/images/piep.jpg') no-repeat center center;
     background-size: cover;
     padding: 40px 10px;
     color: white;
@@ -102,8 +102,8 @@ img {
 
 
 
-/*****************************QUERIES PARA RESPONSIVE******************/
-/* Media Queries para pantallas pequeñas */
+/*****************************QUERIES PARA RESPONSIVE********************************/
+/* Media Queries para pantallas pequeñas -PAGINA PRINCIPAL INDEX */
 /*1 OK*/
 @media (max-width: 900px) {
     .Containerproductos {
@@ -140,6 +140,14 @@ img {
     }
     .pie-img .correo{
         font-size: 10px;
+    }
+    .info-product h2 {
+        background-color: #0e180d;
+        object-fit: cover; /*Configuracion de las imagenes y las centra - las adapta*/
+        font-size: 10px; /*tamaño del texto precio*/
+    }
+    .info-product .precio{
+        font-size: 10px; /*tamaño del texto precio*/
     }
 }
 
