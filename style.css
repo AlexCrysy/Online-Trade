@@ -271,6 +271,9 @@ header{ /*separar el titulo con el carrito de compras*/
     border-radius: 100px;
     display: flex;
 }
+.Th1{
+    width: 100%;
+}
 /*______________________________*/
 /*quienes somos 1 parte*/
 
@@ -442,11 +445,13 @@ header{ /*separar el titulo con el carrito de compras*/
     .Logo1 {
         width: 30%;
     }
-    .Logo1 h1{
-        font-size: 14px;  /* Font-size más pequeño en móviles */
+    .Th1 {
+        font-size: 18px; /* Font-size más pequeño en móviles */
+        color: #0ebdbd;
     }
     .Texto1 h2, .Texto1 h3 {
         font-size: 14px;  /* Font-size más pequeño en móviles */
+        color: #1ea70b;
     }
 
     .correo-container {
