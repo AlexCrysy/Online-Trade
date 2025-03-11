@@ -451,7 +451,7 @@ header{ /*separar el titulo con el carrito de compras*/
     }
     .Texto1 h2, .Texto1 h3 {
         font-size: 14px;  /* Font-size más pequeño en móviles */
-        color: #1ea70b;
+        color: #1b4915;
     }
 
     .correo-container {
@@ -469,7 +469,7 @@ header{ /*separar el titulo con el carrito de compras*/
     }
     .parrafos-pie{
         width: 0 auto;
-        padding: 20px 10px;/*el primero espacio desde arriba y dos desde la izquierda a derecha*/
+        padding: 20px 5px;/*el primero espacio desde arriba y dos desde la izquierda a derecha*/
     }
 }
     
