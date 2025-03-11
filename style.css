@@ -34,13 +34,6 @@ img {
     height: auto;
 }
 
-/* Contenedor de productos */
-.Containerproductos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 0 10px;
-}
 
 /* Estilos de los productos */
 .item {
@@ -157,11 +150,84 @@ img {
 }
 
 
+
+
+
+
+
+/****************CONFIGURACION ITEMS CONTENEDORES DE CADA PRODUCTO*******************************/
+/****************CONFIGURACION ITEMS CONTENEDORES DE CADA PRODUCTO*******************************/
+/* Contenedor de productos */
+.Containerproductos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 10px;
+}
+
+.item{  /*Configuracion de las clases de cada contenedor de los items*/
+    border-radius: 20px;
+}
+.item:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.30)  /*Configuracion de los bordes de cada contenedor de los items*/
+}
+.info-product{ /*Configuracion de los parrafos y la descripcion*/
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;/*Configuracion de los parrafos su espacio ordenadamente*/
+    gap: 05px; /*Configuracion de los espacio o separacion de los parrafos y botones*/
+}
+.img2{  /*Configuracion tamaño de las imagenes ancho y largo*/
+  /*width: 90%;*/
+    height: 30%; /*Altura o largor de las imagenes con el contenedor- todas con el mismo tamaño sin desborde*/
+    padding: 0px 100px 0px 100px;
+    object-fit: cover; /*Configuracion de las imagenes y las centra - las adapta*/
+    border-radius: 0 0 0 50px ;/*forma ovalada a la imagenes*/
+    border-top-left-radius: 50px;/*forma ovalada de arriba la imagenes esquina izquierda*/
+    transition: all .5s; /*Velocidad en que se muestran las imagenes en el 3d al pasar el puntero por encima*/
+}
+.item figure{
+    overflow: hidden;  /*no deja que se desborde a la imagenes*/
+}
+
+.img2:hover {   /*forma sobresaliente 3d a la imagenes*/
+    transform: scale(1.2);
+}
+/*Texto y botones de comprar*/
+.precio{
+    font-size: 20px; /*tamaño del texto precio*/
+    font-weight: 900;/*Negrilla del texto precio*/
+}
+.button2{   /*Configuracion link y clase del botton comprar*/
+    border: none;
+    background: none;
+    background-color: #241b10;
+    color: rgb(145, 161, 145); /*Color texto link del botom comprar*/
+    padding: 10px 10px;
+    display: grid;
+    border-radius: 20px;
+}
+.info-product button{   /*Color texto del botom comprar*/
+    padding: 10px 5px;
+    cursor: pointer; /*Para la manito cuando paso el cursor*/
+    font-size: 17px; /*tamaño del texto comprar*/
+    font-weight: 510;/*Negrilla del texto comprar*/ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*1 OK FUNCIONA BIEN HASTA ACA*/
 /*2 ABAJO SIGUE*/
-
-
-
 
 /*
 .icon-cart{   /*Dimensiones del icono de compras*/
@@ -451,7 +517,7 @@ header{ /*separar el titulo con el carrito de compras*/
     }
     .Texto1 h2, .Texto1 h3 {
         font-size: 14px;  /* Font-size más pequeño en móviles */
-        color: #1b4915;
+        color: #0e180d;
     }
 
     .correo-container {
