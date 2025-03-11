@@ -455,7 +455,7 @@ header{ /*separar el titulo con el carrito de compras*/
         font-size: 13px; /*Tamaño texto*/
     }
     iframe{
-        width: 100%;
+        width: 50%;
         padding: 20px 0px;
 
     }
