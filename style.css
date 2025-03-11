@@ -1,4 +1,5 @@
 /* RESET GLOBAL */
+/*1 OK*/
 *::after,
 *::before,
 *{
@@ -104,16 +105,14 @@ img {
     color: rgb(58, 4, 4);
     font-size: 20px;
 }
+/*1 OK FUNCIONA BIEN HASTA ACA*/
+/*2 ABAJO SIGUE*/
 
 
 
-
-
-
-
-
-
+/*****************************QUERIES PARA RESPONSIVE******************/
 /* Media Queries para pantallas pequeñas */
+/*1 OK*/
 @media (max-width: 900px) {
     .Containerproductos {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
@@ -152,51 +151,55 @@ img {
     }
 }
 
+@media (max-width: 255px) {
+    .Containerproductos {
+        grid-template-columns: 1, 1fr; /* Una columna en móviles */
+    }
 
+    header h1 {
+        font-size: 1em;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**::after,
-*::before,
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    .item img {
+        height: 150px;
+    }
+    .pie-img h2{
+        font-size: 1em;
+    }
+    .pie-img .correo{
+        font-size: 5px;
+    }
 }
-body{
-    margin: 0 auto;
-    max-width: 900px;
-    font-family:'Lato';
-    color: #333333;
-}
+/*1 OK FUNCIONA BIEN HASTA ACA*/
+/*2 ABAJO SIGUE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .icon-cart{   /*Dimensiones del icono de compras*/
  /*   width: 16px;
     height: 40px;
@@ -292,40 +295,94 @@ header{ /*separar el titulo con el carrito de compras*/
 
 
 
-/*********************CONFIGURACION CONTACTO*/
-/*
-.cc1{
-    width: 0; 
-    color: rgb(2, 23, 41);
- /*   font-size: 20px; /*tamaño del texto comprar*/
- /*   padding: 0px 0px 0px 530px;
-    line-height: 0px ;
-    background-position: right;
-    text-align: center;
-    background-color: #af9210;
-}
+/********************* css CONFIGURACION CONTACTO********************/
 
-.contacto1 button{
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    background-color: #134157;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 15px 0px;
+/*El header ya esta arriba*/
+
+
+.Logo1{
+    width: 10%;
     border-radius: 100px;
-    cursor: pointer;
-}
-.cor11{
     display: flex;
-    color: rgb(46, 14, 230);
-    font-size: 15px;
-    background: fixed;
-    padding: 0px 0px 0px 0px;
+}
+/*______________________________*/
+/*quienes somos 1 parte*/
+
+.Texto1 h2, .Texto1 h3  {
+    color: #110e2e;
+    font-size: 10px; /*Tamaño texto */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #e3f0e0;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/*CONFIGURACION WHATSAPP*/
+
+
+/*______________________________*/
+/*Boton contacto 1 parte*/
+
+/*.contacto2{  /*Posiciona el button - pagina contacto*
+    font-size: 30px; /*tamaño del texto *
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;/*Le da espacio desde bienbenidos a nuestra tienda hacia abajo*
+    background-color: #252e55;
+}*/
+/*Boton contacto 2 parte y final- pagina contacto*/
+.contacto2 button{ /*Le da forma al texto dentro del button y tamaño dentro*/
+    width: 25%;
+    background-color: #134157;/*Color de fondo dentro del button*/
+    color: white; /*Color texto dentro del button*/
+    font-size: 20px; /*Tamaño texto dentro del button*/
+    font-weight: bold; /*Negrilla al texto dentro del button*/
+    padding: 20px 0px;/*Tamaño en dismensiones del button*/
+    border-radius: 100px;
+    cursor: pointer; /*Manita*/
+}
+/*______________________________*/
+
+
+
+
+/*______________________________*/
+/*1 parte  - contenedor correo electronico - pagina contacto*/
+.correo-container{
+    width: 50%;
+    display: grid;
+    color: rgb(27, 41, 80);
+    font-size: 10px; /*Tamaño texto*/
+    padding: 20px 150px;/*el primero espacio desde arriba y dos desde la izquierda a derecha*/
+}
+/*2 parte  final- contenedor correo electronico - pagina contacto*/
+.correo-container a{
+    color: #110e2e;
+    font-size: 15px; /*Tamaño texto*/
+}
+/*______________________________*/
+
+
+
+/************************CONFIGURACION WHATSAPP**************/
+
+.whatsapp-container a{
+    color: #f5f4f8;/*Color texto*/
+    background-color: #110e2e;/*color de fondo o sombreado*/
+    font-size: 15px; /*Tamaño texto*/
+    border-radius: 10px;
+    padding: 5px;/*Le da espacio desde bienbenidos a nuestra tienda hacia abajo*/
+}
+/*______________________________*/
+/*contenedor parrafos - pagina contacto*/
+.parrafos-pie{ /*CON ESTAS DOS CENTRA TODO Y LO ENCOJE*/
+    width: 0 auto;
+    padding: 20px 150px;/*el primero espacio desde arriba y dos desde la izquierda a derecha*/
+}
+
 /*
 .whatsapp-container {
     text-align: center;
@@ -372,10 +429,6 @@ header{ /*separar el titulo con el carrito de compras*/
  /*   padding:0px 0px 0px 765px;
  }
 
+/*****************************QUERIES DE CONTACTO PARA RESPONSIVE******************/
+/* Media Queries para pantallas pequeñas */
 
-
-
-/*-----------------------------------------------------------------------------------------------------------------*/
-
-
- /*RESPONSIVO PARA DISPOSITIVOS MOVILES 1 FORMA PARA TAMAÑO DE 900 PX*/
