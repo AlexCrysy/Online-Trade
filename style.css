@@ -442,6 +442,9 @@ header{ /*separar el titulo con el carrito de compras*/
     .Logo1 {
         width: 30%;
     }
+    .Logo1 h1{
+        font-size: 14px;  /* Font-size más pequeño en móviles */
+    }
     .Texto1 h2, .Texto1 h3 {
         font-size: 14px;  /* Font-size más pequeño en móviles */
     }
@@ -455,7 +458,7 @@ header{ /*separar el titulo con el carrito de compras*/
         font-size: 13px; /*Tamaño texto*/
     }
     iframe{
-        width: 80%;
+        width: 100%;
         padding: 10px 0px;
 
     }
