@@ -30,9 +30,12 @@ header h1 img {
 
 
 /* Imagenes y Estilos Generales */
-img {
-    max-width: 100%;
-    height: auto;
+.item .img2 {
+    padding: 15px 0px; /*Configuracion posicion de las imagenes con el contenedor*/
+    border-bottom: 2px solid #899e87;
+    height: 290px;/*Configuracion tamaño de las imagenes con el contenedor*/
+    object-fit: cover; /*Configuracion de las imagenes y las centra*/
+    transition: all .5s; /*Velocidad en que se muestran las imagenes en el 3d al pasar el puntero por encima*/
 }
 
 
@@ -48,12 +51,6 @@ img {
     transform: translateY(-5px);
 }
 
-.item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #ddd;
-}
 
 .info-product {
     padding: 10px;
@@ -84,7 +81,7 @@ img {
 /* ******Estilos de pie de página ****************/
 .pie-img {
     text-align: center;
-    background: linear-gradient(to right, rgba(23, 131, 219, 0.8), rgba(0, 0, 0, 0.4)),url('/images/piep.jpg') no-repeat center center;
+    background: linear-gradient(to right, rgba(23, 131, 219, 0.8), rgba(58, 41, 41, 0.4)),url('/images/piep.jpg') no-repeat center center;
     background-size: cover;
     padding: 40px 10px;
     color: white;
@@ -105,14 +102,12 @@ img {
 /*****************************QUERIES PARA RESPONSIVE********************************/
 /* Media Queries para pantallas pequeñas -PAGINA PRINCIPAL INDEX */
 /*1 OK*/
-@media (max-width: 900px) {
+@media (max-width:750px) {
     .Containerproductos {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
     }
 
-    .item img {
-        height: 180px;
-    }
+    
 
     .button2 {
         padding: 12px 0;
@@ -131,9 +126,7 @@ img {
         font-size: 1.1em;
     }
 
-    .item img {
-        height: 150px;
-    }
+    
 
     .pie-img {
         padding: 20px 10px;
