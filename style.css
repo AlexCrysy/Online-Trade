@@ -79,6 +79,18 @@ header h1 img {
 }
 
 /* ******Estilos de pie de página ****************/
+.redireccionamiento-pagina2 {
+    text-align: center;
+    background: linear-gradient(to right, rgba(7, 63, 7, 0.8), rgba(209, 17, 17, 0.4)),url('/images/piep.jpg') no-repeat center center;
+    background-size: 10px;
+    padding: 10px 10px;
+    background-color: #148080;
+    font-size: 30px; /*tamaño del texto precio*/
+}
+.redireccionamiento-pagina2 a{
+    color: #f7f2f2;
+    font-weight: 600;/*Negrilla del texto precio*/
+}
 .pie-img {
     text-align: center;
     background: linear-gradient(to right, rgba(23, 131, 219, 0.8), rgba(58, 41, 41, 0.4)),url('/images/piep.jpg') no-repeat center center;
