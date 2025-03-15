@@ -81,30 +81,31 @@ header h1 img {
 /* ******Estilos de pie de página ****************/
 .redireccionamiento-pagina2 {
     text-align: center;
-    background: linear-gradient(to right, rgba(7, 63, 7, 0.8), rgba(209, 17, 17, 0.4)),url('/images/piep.jpg') no-repeat center center;
-    background-size: 10px;
-    padding: 10px 10px;
-    background-color: #148080;
-    font-size: 30px; /*tamaño del texto precio*/
+    background: linear-gradient(to right, rgba(8, 8, 8, 0.815), rgba(2, 21, 44, 0.938)),url('/images/piep.jpg') no-repeat center center;
+    background-size: px;
+    padding: 20px 0px;
+   /* background-color: #148080;*/
+    font-size: 25px; /*tamaño del texto */
+    border-radius: 250%;
 }
 .redireccionamiento-pagina2 a{
-    color: #f7f2f2;
-    font-weight: 600;/*Negrilla del texto precio*/
+    color: #fdfdfd;
+    font-weight: 650;/*Negrilla del texto precio*/
+    font-family: sans-seri;
 }
 .pie-img {
     text-align: center;
-    background: linear-gradient(to right, rgba(23, 131, 219, 0.8), rgba(58, 41, 41, 0.4)),url('/images/piep.jpg') no-repeat center center;
+    background: linear-gradient(to right, rgba(21, 64, 100, 0.603), rgba(19, 1, 1, 0.836)),url('/images/piep.jpg') no-repeat center center;
     background-size: cover;
     padding: 40px 10px;
-    color: white;
+    color: rgb(156, 134, 134);
 }
 
 .pie-img h2, .pie-img h5, .pie-img h6 {
     margin-bottom: 20px;
 }
 .pie-img .correo{
-    color: rgb(58, 4, 4);
-    font-size: 20px;
+    color: rgb(131, 127, 125);
 }
 /*1 OK FUNCIONA BIEN HASTA ACA*/
 /*2 ABAJO SIGUE*/
@@ -114,13 +115,21 @@ header h1 img {
 /*****************************QUERIES PARA RESPONSIVE********************************/
 /* Media Queries para pantallas pequeñas -PAGINA PRINCIPAL INDEX */
 /*1 OK*/
-@media (max-width:750px) {
+@media (max-width:900px) {
     .Containerproductos {
         grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
     }
-
-    
-
+    .button2 {
+        padding: 12px 0;
+    }
+    .pie-img .correo{
+        font-size: 15px;
+    }
+}
+@media (max-width:900px) {
+    .Containerproductos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
+    }
     .button2 {
         padding: 12px 0;
     }
@@ -129,38 +138,107 @@ header h1 img {
     }
 }
 
-@media (max-width: 380px) {
+
+@media (max-width: 700px) {
     .Containerproductos {
         grid-template-columns: 1, 1fr; /* Una columna en móviles */
     }
-
     header h1 {
         font-size: 1.1em;
     }
-
-    
-
-    .pie-img {
-        padding: 20px 10px;
+    .info-product h2 {
+        object-fit: cover; /*Configuracion de las imagenes y las centra - las adapta*/
+        font-size: 13px; /*tamaño del texto */
     }
-    .pie-img .correo{
-        font-size: 10px;
+    .info-product .precio{
+        font-size: 11px; /*tamaño del texto precio*/
+    }
+}
+
+
+@media (max-width: 553px) {
+    .Containerproductos {
+        grid-template-columns: 1, 1fr; /* Una columna en móviles */
+    }
+    header h1 {
+        font-size: 1.1em;
     }
     .info-product h2 {
-        background-color: #0e180d;
         object-fit: cover; /*Configuracion de las imagenes y las centra - las adapta*/
-        font-size: 10px; /*tamaño del texto precio*/
+        font-size: 11px; /*tamaño del texto */
     }
     .info-product .precio{
         font-size: 10px; /*tamaño del texto precio*/
     }
+    .item .img2 {
+        padding: 15px 0px; /*Configuracion posicion de las imagenes con el contenedor*/
+        border-bottom: 2px solid #899e87;
+        height: 250px;/*Configuracion tamaño de las imagenes con el contenedor*/
+        object-fit: cover; /*Configuracion de las imagenes y las centra*/
+        transition: all .5s; /*Velocidad en que se muestran las imagenes en el 3d al pasar el puntero por encima*/
+    }
 }
 
-@media (max-width: 255px) {
+
+
+@media (max-width: 360px) {
+    header h1{
+      font-size: 12px;
+    }
+    .Containerproductos {
+        grid-template-columns: 1, 1fr; /* Una columna en móviles */
+    }
+    header h1 {
+        font-size: 1.1em;
+    }
+    .info-product h2 {
+        object-fit: cover; /*Configuracion de las imagenes y las centra - las adapta*/
+        font-size: 13px; /*tamaño del texto */
+    }
+    .redireccionamiento-pagina2 a{
+        font-size: 17px;
+    }
+}
+
+
+
+@media (max-width: 340px) {
     header h1{
       font-size: 10px;
     }
+    .Containerproductos {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+    header h1 {
+        font-size: 1em;
+    }
+    .info-product h2 {
+        object-fit: cover; /*Configuracion de las imagenes y las centra - las adapta*/
+        font-size: 11px; /*tamaño del texto */
+    }
+    .redireccionamiento-pagina2 a{
+        font-size: 19px;
+    }
+    .info-product .button2 {
+        padding: 0px;/*le quita lo sombreado de bajo del bottom*/
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+    .item .img2 {
+        padding: 15px 0px; /*Configuracion posicion de las imagenes con el contenedor*/
+        border-bottom: 15px solid #899e87;
+        height: 170px;/*Configuracion tamaño de las imagenes con el contenedor*/
+        transition: all .9s; /*Velocidad en que se muestran las imagenes en el 3d al pasar el puntero por encima*/
+    }
+    
 }
+
+
+
+
+
+
+
 
 
 
